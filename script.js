@@ -24,7 +24,4 @@ function handlePurchase() {
   window.open(url, "_blank");
 }
 
-function toggleSideMenu() {
-  document.getElementById("side-menu").classList.toggle("open");
-}
 
