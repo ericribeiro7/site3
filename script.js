@@ -29,7 +29,7 @@ function toggleSideMenu() {
 }
 
 function abrirModal() {
-  document.getElementById("modalAtrações").style.display = "flex";
+  document.getElementById("modalAtrações");
 }
 
 function fecharModal() {
