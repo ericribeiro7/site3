@@ -27,3 +27,11 @@ function handlePurchase() {
 function toggleSideMenu() {
   document.getElementById("side-menu").classList.toggle("open");
 }
+
+function abrirModal() {
+  document.getElementById("modalAtrações").style.display = "flex";
+}
+
+function fecharModal() {
+  document.getElementById("modalAtrações").style.display = "none";
+}

@@ -16,24 +16,22 @@
         <img src="assets/hawai.png" class="logo" alt="Hawaii" />
         <img src="assets/mkt.png" class="logo" alt="MKT" />
       </div>
-      <button class="menu-button" onclick="toggleSideMenu()">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="menu-icon" onclick="abrirModal()">☰</div>
     </div>
 
-    <!-- Menu lateral de atrações -->
-    <div id="side-menu" class="side-menu">
-      <div class="side-menu-content">
-        <h2>Atrações Confirmadas</h2>
-        <ul>
-          <li>🎤 DJ Igor Passinho</li>
-          <li>🎧 Jhonata Soares</li>
-          <li>🕺 DJ Beck</li>
-          <li>🎶 DJ Xuxa</li>
-        </ul>
-        <button onclick="toggleSideMenu()">Fechar</button>
-      </div>
+    <!-- Modal das atrações -->
+  <div class="modal-overlay" id="modalAtrações">
+    <div class="modal">
+      <h2>Atrações Confirmadas</h2>
+      <ul>
+        <li>🎤 DJ Igor Passinho</li>
+        <li>🎧 Jhonata Soares</li>
+        <li>🕺 DJ Beck</li>
+        <li>🎶 DJ Xuxa</li>
+      </ul>
+      <button class="close-btn" onclick="fecharModal()">Fechar</button>
     </div>
+  </div>
 
     <!-- Banner -->
     <img src="assets/baile2.png" class="banner" alt="Banner" />
