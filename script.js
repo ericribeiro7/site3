@@ -28,8 +28,12 @@ function toggleSideMenu() {
   document.getElementById("side-menu").classList.toggle("open");
 }
 
+window.onload = () => {
+  document.getElementById("modalAtrações").style.display = "none";
+};
+
 function abrirModal() {
-  document.getElementById("modalAtrações");
+  document.getElementById("modalAtrações").style.display = "flex";
 }
 
 function fecharModal() {
