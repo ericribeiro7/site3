@@ -145,4 +145,42 @@
     font-size: 16px;
     color: white;
   }
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #1E1E1E;
+    color: white;
+    transition: right 0.3s ease;
+    z-index: 999;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+  }
+  .side-menu.open {
+    right: 0;
+  }
+  .side-menu-content {
+    padding: 20px;
+  }
+  .side-menu-content h2 {
+    margin-bottom: 15px;
+  }
+  .side-menu-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .side-menu-content li {
+    margin-bottom: 10px;
+  }
+  .side-menu-content button {
+    margin-top: 20px;
+    background-color: #00C853;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+  }
   

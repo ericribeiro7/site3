@@ -24,7 +24,8 @@ function handlePurchase() {
   window.open(url, '_blank');
 }
 
-function toggleModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+function toggleSideMenu() {
+  const menu = document.getElementById("side-menu");
+  menu.classList.toggle("open");
 }
+

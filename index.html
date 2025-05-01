@@ -22,17 +22,24 @@
       </button>
     </div>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <h2>Atrações Confirmadas</h2>
-        <p>🎤 DJ Igor Passinho</p>
-        <p>🎧 Jhonata Soares</p>
-        <p>🕺 DJ Beck</p>
-        <p>🎶 DJ Xuxa</p>
-        <button onclick="toggleModal()">Fechar</button>
-      </div>
-    </div>
+    <!-- Menu lateral de atrações -->
+<div id="side-menu" class="side-menu">
+  <div class="side-menu-content">
+    <h2>Atrações Confirmadas</h2>
+    <ul>
+      <li>🎤 DJ Igor Passinho</li>
+      <li>🎧 Jhonata Soares</li>
+      <li>🕺 DJ Beck</li>
+      <li>🎶 DJ Xuxa</li>
+    </ul>
+    <button onclick="toggleSideMenu()">Fechar</button>
+  </div>
+</div>
+
+<button class="menu-button" onclick="toggleSideMenu()">
+  <i class="fas fa-bars"></i>
+</button>
+
 
     <!-- Banner -->
     <img src="baile2.png" alt="Banner" class="banner" />
