@@ -33,7 +33,7 @@ window.onload = () => {
 };
 
 function abrirModal() {
-  document.getElementById("modalAtrações").style.display = "flex";
+  document.getElementById("modalAtrações").style.display = "none";
 }
 
 function fecharModal() {
