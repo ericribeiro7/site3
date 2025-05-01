@@ -19,7 +19,7 @@ function decrement() {
 }
 
 function handlePurchase() {
-  const message = `Olá! Gostaria de comprar ${quantity} 3 ingresso(s) para a 3° edição do Baile do Menino Rei x Hawaii do Marrento em Peri Mirim - MA`;
+  const message = `Olá! Gostaria de comprar ${quantity} ingresso(s) para a 3° edição do Baile do Menino Rei x Hawaii do Marrento em Peri Mirim - MA`;
   const url = `https://wa.me/98981378687?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
