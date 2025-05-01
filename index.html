@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baile do Menino Rei</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-row">
+        <img src="baile.png" alt="Logo 1" class="logo" />
+        <img src="hawai.png" alt="Logo 2" class="logo" />
+        <img src="mkt.png" alt="Logo 3" class="logo" />
+      </div>
+      <button class="menu-button" onclick="toggleModal()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Atrações Confirmadas</h2>
+        <p>🎤 DJ Igor Passinho</p>
+        <p>🎧 Jhonata Soares</p>
+        <p>🕺 DJ Beck</p>
+        <p>🎶 DJ Xuxa</p>
+        <button onclick="toggleModal()">Fechar</button>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <img src="baile2.png" alt="Banner" class="banner" />
+
+    <!-- Títulos -->
+    <h1 class="title">BAILE DO MENINO REI X HAWAII DO MARRENTO</h1>
+    <h2 class="subtitle">3ª EDIÇÃO</h2>
+
+    <!-- Descrição -->
+    <div class="section">
+      <h3>DETALHES DA FESTA:</h3>
+      <p>Uma noite histórica com muita música, gente bonita e energia positiva! Prepare-se para viver momentos inesquecíveis com atrações incríveis e aquele clima tropical que só o Hawaii do Marrento proporciona.</p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="section">
+      <h3>LOCALIZAÇÃO:</h3>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=-2.578460931341825,-44.86184606892182&hl=pt&z=15&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Ingressos -->
+    <h3 class="section-title">ESCOLHA A QUANTIDADE DE INGRESSOS</h3>
+    <div class="ticket-card">
+      <img src="baile2.png" alt="Ingresso" class="ticket-image" />
+      <div class="ticket-info">
+        <p class="ticket-title">ADQUIRA SEU INGRESSO</p>
+        <p class="ticket-price" id="total-price">R$ 10,00</p>
+      </div>
+      <div class="quantity-control">
+        <button onclick="decrement()">−</button>
+        <span id="quantity">1</span>
+        <button onclick="increment()">+</button>
+      </div>
+    </div>
+
+    <!-- Botão WhatsApp -->
+    <button class="buy-button" onclick="handlePurchase()">
+      FINALIZAR COMPRA (WhatsApp)
+    </button>
+  </div>
+</body>
+</html>
