@@ -1,31 +1,29 @@
 let quantity = 1;
-const price = 10;
+const ticketPrice = 10;
 
-function updatePrice() {
+function updateDisplay() {
   document.getElementById("quantity").innerText = quantity;
-  document.getElementById("total-price").innerText = `R$ ${(quantity * price).toFixed(2)}`;
+  document.getElementById("ticket-price").innerText = `R$ ${(ticketPrice * quantity).toFixed(2)}`;
 }
 
 function increment() {
   quantity++;
-  updatePrice();
+  updateDisplay();
 }
 
 function decrement() {
   if (quantity > 1) {
     quantity--;
-    updatePrice();
+    updateDisplay();
   }
 }
 
 function handlePurchase() {
-  const message = `Olá! Gostaria de comprar ${quantity} ingresso(s) para o Baile do Menino Rei x Hawaii do Marrento.`;
+  const message = `Olá! Gostaria de comprar ${quantity} 3 ingresso(s) para a 3° edição do Baile do Menino Rei x Hawaii do Marrento em Peri Mirim - MA`;
   const url = `https://wa.me/98981378687?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank');
+  window.open(url, "_blank");
 }
 
 function toggleSideMenu() {
-  const menu = document.getElementById("side-menu");
-  menu.classList.toggle("open");
+  document.getElementById("side-menu").classList.toggle("open");
 }
-

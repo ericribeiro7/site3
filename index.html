@@ -1,89 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Baile do Menino Rei</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <div class="header">
       <div class="logo-row">
-        <img src="baile.png" alt="Logo 1" class="logo" />
-        <img src="hawai.png" alt="Logo 2" class="logo" />
-        <img src="mkt.png" alt="Logo 3" class="logo" />
+        <img src="assets/baile.png" class="logo" alt="Baile" />
+        <img src="assets/hawai.png" class="logo" alt="Hawaii" />
+        <img src="assets/mkt.png" class="logo" alt="MKT" />
       </div>
-      <button class="menu-button" onclick="toggleModal()">
+      <button class="menu-button" onclick="toggleSideMenu()">
         <i class="fas fa-bars"></i>
       </button>
     </div>
 
     <!-- Menu lateral de atrações -->
-<div id="side-menu" class="side-menu">
-  <div class="side-menu-content">
-    <h2>Atrações Confirmadas</h2>
-    <ul>
-      <li>🎤 DJ Igor Passinho</li>
-      <li>🎧 Jhonata Soares</li>
-      <li>🕺 DJ Beck</li>
-      <li>🎶 DJ Xuxa</li>
-    </ul>
-    <button onclick="toggleSideMenu()">Fechar</button>
-  </div>
-</div>
-
-<button class="menu-button" onclick="toggleSideMenu()">
-  <i class="fas fa-bars"></i>
-</button>
-
+    <div id="side-menu" class="side-menu">
+      <div class="side-menu-content">
+        <h2>Atrações Confirmadas</h2>
+        <ul>
+          <li>🎤 DJ Igor Passinho</li>
+          <li>🎧 Jhonata Soares</li>
+          <li>🕺 DJ Beck</li>
+          <li>🎶 DJ Xuxa</li>
+        </ul>
+        <button onclick="toggleSideMenu()">Fechar</button>
+      </div>
+    </div>
 
     <!-- Banner -->
-    <img src="baile2.png" alt="Banner" class="banner" />
+    <img src="assets/baile2.png" class="banner" alt="Banner" />
 
-    <!-- Títulos -->
     <h1 class="title">BAILE DO MENINO REI X HAWAII DO MARRENTO</h1>
     <h2 class="subtitle">3ª EDIÇÃO</h2>
 
-    <!-- Descrição -->
     <div class="section">
-      <h3>DETALHES DA FESTA:</h3>
-      <p>Uma noite histórica com muita música, gente bonita e energia positiva! Prepare-se para viver momentos inesquecíveis com atrações incríveis e aquele clima tropical que só o Hawaii do Marrento proporciona.</p>
+      <p class="label">DETALHES DA FESTA:</p>
+      <p class="description">
+        Uma noite histórica com muita música, gente bonita e energia positiva!
+        Prepare-se para viver momentos inesquecíveis com atrações incríveis e
+        aquele clima tropical que só a MKT Produtora proporciona.
+      </p>
     </div>
 
-    <!-- Mapa -->
     <div class="section">
-      <h3>LOCALIZAÇÃO:</h3>
+      <p class="label">LOCALIZAÇÃO:</p>
       <iframe
         class="map"
-        src="https://www.google.com/maps?q=-2.578460931341825,-44.86184606892182&hl=pt&z=15&output=embed"
+        src="https://www.google.com/maps?q=-2.578460931341825,-44.86184606892182&z=15&output=embed"
         allowfullscreen=""
         loading="lazy"
       ></iframe>
     </div>
 
-    <!-- Ingressos -->
-    <h3 class="section-title">ESCOLHA A QUANTIDADE DE INGRESSOS</h3>
+    <h2 class="section-title">ESCOLHA A QUANTIDADE DE INGRESSOS</h2>
+
     <div class="ticket-card">
-      <img src="baile2.png" alt="Ingresso" class="ticket-image" />
+      <img src="assets/baile2.png" class="ticket-image" alt="Ingresso" />
       <div class="ticket-info">
         <p class="ticket-title">ADQUIRA SEU INGRESSO</p>
-        <p class="ticket-price" id="total-price">R$ 10,00</p>
+        <p class="ticket-price" id="ticket-price">R$ 10.00</p>
       </div>
       <div class="quantity-control">
-        <button onclick="decrement()">−</button>
+        <button onclick="decrement()">-</button>
         <span id="quantity">1</span>
         <button onclick="increment()">+</button>
       </div>
     </div>
 
-    <!-- Botão WhatsApp -->
     <button class="buy-button" onclick="handlePurchase()">
       FINALIZAR COMPRA (WhatsApp)
     </button>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
